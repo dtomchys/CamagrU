@@ -7,11 +7,15 @@
  */
 
 include_once ROOT . '/models/LoginModel.php';
+include_once ROOT. '/controllers/MainController.php';
 
-class LoginController
+class LoginController extends MainController
 {
-    public function actionIndex() {
-        $model = new LoginModel();
-        require_once ROOT . '/views/default.php';
+    public function actionViews() {
+        $path = ROOT.'/views/login.php';
+        MainController::actionIndex($path);
+    }
+    public function actionEnter() {
+        echo 111;
     }
 }

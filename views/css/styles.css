@@ -1,6 +1,11 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
+    position: relative;
     background-size: cover;
     background: url("/views/img/back.jpg");
     font-family: sans-serif;
@@ -69,7 +74,7 @@ h1 {
 
 .loginbox input[type="submit" ]:hover {
     cursor: pointer;
-    background: #ffc107;
+    background: #ff0c07;
     color: #000000;
 }
 
@@ -83,4 +88,77 @@ h1 {
 
 .loginbox a:hover {
     color: #ffc107;
+}
+
+.footer {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background: black;
+    padding: 20px 0px;
+}
+
+.footer_icons {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer_icons ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer_icons ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 25px;
+    border-radius: 100%;
+    background: #ff8004;
+}
+
+.footer_icons ul li:hover {
+    background: #ff0c07;
+}
+
+.footer_icons ul li a {
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+.footer_icons ul li a i {
+    line-height: 50px;
+}
+
+.footer_bot {
+    width: 100%;
+    height: 16px;
+    margin: 0;
+    background: #ff0054;
+    padding: 0;
+}
+
+.footer_bot p {
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.footer_bot p a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
 }

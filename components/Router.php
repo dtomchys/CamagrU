@@ -26,9 +26,6 @@ class Router
         //GET REQUEST STRING
         $uri = $this->getURI();
         //check whether routes has this request
-        if ($uri == null){
-            $uri = 'log';
-        }
         foreach ($this->routes as $uriPattern => $path) {
             if (preg_match("/^$uriPattern$/", $uri)) {
                 $segments = explode('/', $path);

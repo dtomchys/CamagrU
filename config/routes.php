@@ -6,6 +6,7 @@
  * Time: 8:23 PM
  */
     return array(
-        'log' => 'login/index',
-        'signin' => 'signin/index'
+        '' => 'main/index',
+        'login' => 'login/views',
+        'sign' => 'signin/index'
     );

@@ -1,40 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
     <meta charset="UTF-8">
     <title>CamagrU</title>
-    <link href="views/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/views/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-    <div class="loginbox" onsubmit="return validate();">
-        <img src="/views/img/avatar.png" class="avatar">
-        <h1>Sign In</h1>
-        <form>
-            <p>Login</p>
-            <input type="text" name="" placeholder="Login:" id="log_id">
-            <p>Password</p>
-            <input type="password" name="" placeholder="Password:" id="pass_id">
-            <input type="submit" name="" value="Login">
-            <a href="#">Forget your password?</a>
-            <a href="#">Don't have an account?</a>
-        </form>
-    <script>
-        function validate() {
-            var userName = document.getElementById("log_id");
-            var userPass = document.getElementById("pass_id");
 
-            if (!userName.value) {
-                userName.style.border = "2px solid red";
-                return false;
-            }
-            if (!userPass.value) {
-                userPass.style.border = "2px solid red";
-                return false;
-            }
-            return true;
-        }
-    </script>
+    <?php echo $this->content_page?>
+    <div class="bottom">
+        <div class="footer">
+            <div class="footer_icons">
+                <ul>
+                    <li><a href="#" target="blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-google"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bot">
+            <p>Designed by: <a href="#">dtomchys</a></p>
+        </div>
     </div>
 </body>
 </html>
