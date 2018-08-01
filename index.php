@@ -14,7 +14,7 @@
     define('ROOT', dirname(__FILE__));
     require_once (ROOT.'/components/Router.php');
     //3.SET CONNECTION WITH BD
-    require_once 'config/init_db.php';
+    require_once (ROOT.'/config/DB.php');
     //4.CALL ROUTE
     session_start();
     $router = new Router();

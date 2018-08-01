@@ -8,7 +8,7 @@
 
 class MainController
 {
-        public $content_page;
+        private $content_page;
 
         public function actionIndex($path_content = null) {
             if (!isset($path_content)) {

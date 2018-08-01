@@ -15,6 +15,7 @@ try {
     $connect->exec('CREATE TABLE IF NOT EXISTS `accounts`.`users`
 (
     `id` INT NOT NULL AUTO_INCREMENT,
+    `username` VARCHAR(50) NOT NULL,
     `first_name` VARCHAR(50) NOT NULL,
     `last_name` VARCHAR(50) NOT NULL,
     `email` VARCHAR (100) NOT NULL,
@@ -24,6 +25,7 @@ try {
     PRIMARY KEY (`id`)
 )
 ');
+
 }
 catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();

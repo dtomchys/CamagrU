@@ -11,11 +11,21 @@ include_once ROOT. '/controllers/MainController.php';
 
 class LoginController extends MainController
 {
+    private $error = array();
+    private $model;
+
     public function actionViews() {
+
         $path = ROOT.'/views/login.php';
+        if (isset($_POST['log']))
+            $this->actionValidate();
         MainController::actionIndex($path);
     }
-    public function actionEnter() {
-        echo 111;
+    private function actionValidate() {
+        $this->model = new LoginModel();
+        if (isset($_POST['log'])) {
+
+        }
+        unset($_POST);
     }
 }
